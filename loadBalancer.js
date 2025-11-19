@@ -2,6 +2,7 @@ export class LoadBalancer {
   constructor(servers, strategy) {
     this.servers = servers;
     this.strategy = strategy;
+    this.name = strategy.name;
   }
 
   async handleRequest(reqId) {
